@@ -12,7 +12,7 @@ A lightweight authentication library built on [Supabase](https://supabase.com/),
 
 **Available Framework Packages**
 
-`@rubyceng/nest-supabase-auth`: Provides complete Supabase authentication integration for NestJS applications, including module configuration, auth guards, and user decorators.
+`@rubyceng/nest-auth-supabase`: Provides complete Supabase authentication integration for NestJS applications, including module configuration, auth guards, and user decorators.
 
 ---
 
@@ -58,14 +58,14 @@ const refreshed = await authService.refreshToken(session.refresh_token);
 
 ---
 
-### `@rubyceng/nest-supabase-auth` (NestJS Integration)
+### `@rubyceng/nest-auth-supabase` (NestJS Integration)
 
 Provides complete Supabase authentication integration for NestJS applications, including module configuration, auth guards, and user decorators.
 
 **Installation**
 
 ```bash
-npm install @rubyceng/nest-supabase-auth
+npm install @rubyceng/nest-auth-supabase
 ```
 
 **Exports**
@@ -82,7 +82,7 @@ npm install @rubyceng/nest-supabase-auth
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { SupabaseAuthModule } from '@rubyceng/nest-supabase-auth';
+import { SupabaseAuthModule } from '@rubyceng/nest-auth-supabase';
 
 @Module({
   imports: [
@@ -99,7 +99,7 @@ export class AppModule {}
 
 ```typescript
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-supabase-auth';
+import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-auth-supabase';
 
 @Controller('profile')
 @UseGuards(SupabaseAuthGuard)
@@ -192,7 +192,7 @@ pnpm dev
 
 ### `api` (NestJS API Example)
 
-A NestJS-based business API service that uses the `@rubyceng/nest-supabase-auth` package to implement protected API endpoints.
+A NestJS-based business API service that uses the `@rubyceng/nest-auth-supabase` package to implement protected API endpoints.
 
 **Getting Started**
 
@@ -237,7 +237,7 @@ auth-supabase/
 │   │       ├── client.ts        # Supabase client factory
 │   │       ├── supabase.service.ts  # Auth service
 │   │       └── interface/       # Type definitions
-│   └── nest-auth/               # @rubyceng/nest-supabase-auth NestJS package
+│   └── nest-auth/               # @rubyceng/nest-auth-supabase NestJS package
 │       └── src/
 │           ├── auth.module.ts   # NestJS module
 │           ├── auth.guard.ts    # Auth guard

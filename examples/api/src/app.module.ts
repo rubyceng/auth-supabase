@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { SupabaseAuthModule } from '@rubyceng/nest-supabase-auth';
+import { SupabaseAuthModule } from '@rubyceng/nest-auth-supabase';
 import dotenv from 'dotenv';
 import { AppController } from './app.controller';
 

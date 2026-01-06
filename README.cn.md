@@ -10,7 +10,7 @@
 
 **现有框架包支持**
 
-`@rubyceng/nest-supabase-auth`：为 NestJS 应用提供完整的 Supabase 认证集成，包括模块配置、认证守卫和用户装饰器。
+`@rubyceng/nest-auth-supabase`：为 NestJS 应用提供完整的 Supabase 认证集成，包括模块配置、认证守卫和用户装饰器。
 
 ---
 
@@ -56,14 +56,14 @@ const refreshed = await authService.refreshToken(session.refresh_token);
 
 ---
 
-### `@rubyceng/nest-supabase-auth`（NestJS 集成包）
+### `@rubyceng/nest-auth-supabase`（NestJS 集成包）
 
 为 NestJS 应用提供完整的 Supabase 认证集成，包括模块配置、认证守卫和用户装饰器。
 
 **安装**
 
 ```bash
-npm install @rubyceng/nest-supabase-auth
+npm install @rubyceng/nest-auth-supabase
 ```
 
 **主要导出**
@@ -80,7 +80,7 @@ npm install @rubyceng/nest-supabase-auth
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { SupabaseAuthModule } from '@rubyceng/nest-supabase-auth';
+import { SupabaseAuthModule } from '@rubyceng/nest-auth-supabase';
 
 @Module({
   imports: [
@@ -97,7 +97,7 @@ export class AppModule {}
 
 ```typescript
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-supabase-auth';
+import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-auth-supabase';
 
 @Controller('profile')
 @UseGuards(SupabaseAuthGuard)
@@ -190,7 +190,7 @@ pnpm dev
 
 ### `api`（NestJS API 示例）
 
-基于 NestJS 的业务 API 服务，使用 `@rubyceng/nest-supabase-auth` 包实现受保护的 API 端点。
+基于 NestJS 的业务 API 服务，使用 `@rubyceng/nest-auth-supabase` 包实现受保护的 API 端点。
 
 **启动步骤**
 
@@ -235,7 +235,7 @@ auth-supabase/
 │   │       ├── client.ts        # Supabase 客户端工厂
 │   │       ├── supabase.service.ts  # 认证服务
 │   │       └── interface/       # 类型定义
-│   └── nest-auth/               # @rubyceng/nest-supabase-auth NestJS 包
+│   └── nest-auth/               # @rubyceng/nest-auth-supabase NestJS 包
 │       └── src/
 │           ├── auth.module.ts   # NestJS 模块
 │           ├── auth.guard.ts    # 认证守卫

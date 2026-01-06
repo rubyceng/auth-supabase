@@ -1,5 +1,5 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-supabase-auth';
+import { CurrentUser, SupabaseAuthGuard } from '@rubyceng/nest-auth-supabase';
 
 @Controller('orders')
 @UseGuards(SupabaseAuthGuard)
