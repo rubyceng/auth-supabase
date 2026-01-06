@@ -1,5 +1,7 @@
 # Auth Supabase
 
+[中文文档](./README.cn.md)
+
 A lightweight authentication library built on [Supabase](https://supabase.com/), providing out-of-the-box authentication service wrappers for rapidly building lightweight auth gateways. Designed for seamless integration with Node.js projects and offering plugin-based extensions for various frameworks.
 
 ## Features
