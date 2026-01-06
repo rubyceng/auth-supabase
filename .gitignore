@@ -1,0 +1,26 @@
+node_modules/
+.nx/cache
+dist/
+.DS_Store
+.env
+.vscode/
+.idea/
+coverage/
+*.log
+
+.npmrc
+
+# Nx cache and logs
+.nx/
+.nx
+
+# AI Agents
+AGENTS.md
+
+
+# Local build output
+dist/
+build/
+
+# Environment files
+.env
