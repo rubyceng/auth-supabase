@@ -1,5 +1,5 @@
 {
-  "name": "@auth-supabase/nest-auth",
+  "name": "@rubyceng/nest-supabase-auth",
   "version": "0.0.2-alpha.0",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@auth-supabase/core": "workspace:^",
+    "@rubyceng/auth-supabase": "workspace:^",
     "@nestjs/common": "^11.1.11",
     "@supabase/supabase-js": "^2.89.0"
   }

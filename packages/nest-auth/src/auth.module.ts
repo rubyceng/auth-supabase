@@ -1,5 +1,5 @@
-import { SupabaseClientFactory } from '@auth-supabase/core';
 import { DynamicModule, Global, Module } from '@nestjs/common';
+import { SupabaseClientFactory } from '@rubyceng/auth-supabase';
 import { SupabaseAuthGuard } from './auth.guard';
 
 export interface SupabaseAuthOptions {

@@ -1,4 +1,4 @@
-import { SupabaseAuthCoreService } from '@auth-supabase/core';
+import { SupabaseAuthCoreService } from '@rubyceng/auth-supabase';
 import dotenv from 'dotenv';
 
 dotenv.config();
