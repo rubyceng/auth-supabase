@@ -1,6 +1,9 @@
 import { SupabaseAuthModule } from '@auth-supabase/nest-auth';
 import { Module } from '@nestjs/common';
+import dotenv from 'dotenv';
 import { AppController } from './app.controller';
+
+dotenv.config();
 
 @Module({
   imports: [
